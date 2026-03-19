@@ -131,6 +131,11 @@ html { scroll-behavior: smooth; }
     margin-top: 15px;
   }
 }
+@media(min-width:1200px){
+   .gla-programs-dialog__description {
+  width:600px
+}
+}
 .form-sec .form-group { position: relative; }
 .form-sec .form-group { position: relative; }
 label.checkbox-label { position: relative; width: 100% }
@@ -1805,7 +1810,7 @@ h1{
 
 /* Dialog Layout */
 .gla-programs-dialog {
-  margin-top: 24px;
+  margin-top: 5px;
 }
 
 .gla-programs-dialog__inner {
@@ -1819,11 +1824,11 @@ h1{
   min-height: 500px;
 }
 
-.gla-programs-dialog__left {
+/* .gla-programs-dialog__left {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
 .gla-programs-dialog__image-wrapper {
   width: 100%;
@@ -2194,11 +2199,20 @@ h1{
 
   .gla-programs-tabs {
     padding: 12px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
 
   .gla-programs-tabs__tab {
     padding: 10px 16px;
     font-size: 14px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .gla-programs-tabs__label {
+    font-size: 13px;
   }
 
   .gla-programs-dialog__inner {
@@ -2206,6 +2220,14 @@ h1{
     flex-direction: column;
     padding: 24px 20px;
     min-height: auto;
+  }
+
+  .gla-programs-dialog__left {
+    order: 1;
+  }
+
+  .gla-programs-dialog__details {
+    order: 2;
   }
 
   .gla-programs-dialog__image-wrapper,
@@ -2218,12 +2240,90 @@ h1{
     height: 250px;
   }
 
+  .gla-programs-dialog__fee-structure {
+    padding: 15px;
+  }
+
+  .gla-programs-dialog__fee-item {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
   .gla-programs-dialog__actions {
     flex-direction: column;
   }
 
   .gla-programs-dialog__btn {
     width: 100%;
+  }
+}
+
+/* Journey/Step Section Responsive */
+@media (max-width: 768px) {
+  .step {
+    background: none;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .no {
+    font-size: 36px;
+    min-width: 50px;
+  }
+
+  .step-det {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .step-det small {
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+    color: #666;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    gap: 15px;
+    padding: 15px 5px;
+  }
+
+  .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .no {
+    font-size: 28px;
+    min-width: 40px;
+  }
+
+  .step-det {
+    font-size: 13px;
+  }
+
+  .step-det small {
+    font-size: 11px;
   }
 }
 
@@ -2265,6 +2365,7 @@ h1{
     max-width: 1200px;
     margin: 0 auto;
   }
+ 
   
   /* When there are 5 cards, center the last 2 on second row */
   .gla-programs-card:nth-child(4) {
