@@ -1,0 +1,330 @@
+
+
+body { font-family: 'Poppins', sans-serif; overflow-x: hidden;}
+p { font-size: 16px; color: #8e8e8e; line-height: 22px; text-align: justify; }
+@font-face { font-family: UniSansHeavyCAPS; font-style: normal; font-weight: 400; src: local('Bebas Neue Regular'), url(../fonts/UniSansHeavyCAPS.woff) format('woff') }
+
+/* ---- reset ---- */
+
+
+/*form*/
+.applybtn a { position: fixed; right: -63px; transform: rotate(90deg); background: #259609; top: 50%; color: #fff; padding: 8px 20px 9px; text-transform: uppercase; font-size: 17px; margin-top: -60px; border: solid 1px #259609; cursor: pointer; z-index: 99; text-decoration: none; display: none; border-radius: 0 0 13px 15px; font-weight: 600; }
+html { scroll-behavior: smooth; }
+.applybtn.sticky a { display: block; }
+.form-sec { position: fixed; transition: all 0.5s; width: 320px; background: #FFF; padding: 0px 17px 20px; border-radius: 6px; float: right !important; z-index: 99; top: 164px; right: 45px; box-shadow: 0 0 40px 0px #8e8e8e; }
+.form-sec.sticky { right: -1450px; }
+.form-sec.slide { right: 45px; }
+.form-sec::before { content: ''; display: block; width: 50%; position: absolute; top: -0.5rem !important; left: 0; border-top: 0.5em solid #259609; margin: 0.5em auto 0; border-radius: 6px; }
+.adm-txt { font-size: 19px; color: #259609; text-align: left; text-transform: uppercase; margin: 23px auto 15px; font-weight: 500; }
+.form-sec .form-group { position: relative; }
+.form-sec .form-group { position: relative; }
+label.checkbox-label { position: relative; width: 100% }
+label.checkbox-label>input[type=checkbox] {
+left: 0px;
+}
+.form-sec .form-group::before { position: absolute; content: ""; background-image: url("../images/form-icon.png"); width: 30px; height: 34px;    /* background-position: -3px -11px; */ top: 7px; left: -5px; opacity: 0.3; }
+.Name::before { background-position: -3px -12px !important; }
+.email::before { background-position: -3px -58px !important; }
+.Mobile::before { background-position: -3px -103px !important; }
+.Course::before { background-position: -3px -150px !important; }
+.State::before { background-position: -3px -243px !important; }
+.City::before { background-position: -3px -195px !important; top: 3px !important; }
+.Course::before { background-position: -3px -146px !important; top: 3px !important; }
+.mobile { display: none !important }
+.input:focus{outline: none;box-shadow: none;	border-bottom: solid 2px #ece8e8;}
+.input {
+	padding: 0 11px 0 28px;
+	height: 30px;
+	width: 100%;
+	/* border-radius: 6px; */
+	font-size: 14px;
+	color: #585858;
+	border: none;
+	background: none;
+	font-weight: 300;
+	border-bottom: solid 2px #ece8e8;
+	border-radius: 0;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+input::-webkit-input-placeholder {    /* Chrome/Opera/Safari */
+color: #585858; opacity: 1 }
+input::-moz-placeholder {    /* Firefox 19+ */
+color: #585858; opacity: 1 }
+input:-ms-input-placeholder {    /* IE 10+ */
+color: #585858; opacity: 1 }
+input:-moz-placeholder {    /* Firefox 18- */
+color: #585858; opacity: 1 }
+.term { font-size: 0.8rem !important; }
+.sbt { border: 0; border-radius: 2px; background: #259609; color: #fff; font-size: 17px; font-weight: 600; text-transform: uppercase; margin: 15px auto 5px; width: 100%; display: inherit; cursor: pointer; padding: 8px 20px; }
+
+
+
+/*.....................................form EnD ............................*/
+
+
+
+
+
+
+
+
+
+
+.desktop-2 {display:block !important; }
+.mobile-2 {display:none !important; }
+
+/*header*/
+header { position: absolute; top: 0; width: 100%; padding-top: 40px; z-index: 9999; transition: all 0.5s; }
+.main-banner {position: relative;}
+.banner-text { position: absolute; left: 0; top: 60%; color: #fff; text-align: left; width: 100%; transform: translateY(-50%); z-index: 9;    /*! padding-top: 250px; */ }
+.main-banner img { width: 100% }
+.banner-text h1 span { color: #ffad00; font-weight: 700; }
+.banner-text h1 {color: #fff;
+    font-size: 53px;
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;}
+.logo { width: 380px;
+    display: inline-block;
+    margin-top: 82px;}
+
+
+.mobile {
+    display: none !important
+}
+
+ button:focus {
+     outline: 0
+ }
+
+/* Style the buttons inside the tab */
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+
+/* Style the tab content */
+
+
+.bottom-bdr { text-align: center; }
+.bottom-bdr p { font-weight: 600; margin: 30px 0; font-size: 16px; text-transform: uppercase; color: #000; }
+.form-group.Branches:before {
+    background-position: -3px -6px !important;
+    top: 1px !important;
+}
+
+.course-2 {
+   
+    color: #000; line-height:24px; display: flex; margin-top: 20px; width: 280px;
+}
+
+.course-name {
+    background: #fff;
+    padding: 3px 9px;
+   
+    width: 178px;
+    color: #000;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center; margin: 0px 55px;
+}
+.course-name-heading{position:relative;}
+
+.course-name-heading{position:relative;}
+.course-name-heading .owl-nav span {
+    width: 32px;
+    height: 32px;
+    margin: 0px 0 20px 9px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    background: transparent;
+    font-size: 75px;
+    color: #ffcb05;
+}
+
+.course-name-heading .owl-prev{ position: absolute; top:12px; left:0px;}
+.course-name-heading .owl-next{ position: absolute; top:12px; right:0px;}
+h1{ font-size:50px; color:#000; font-weight: bold; margin-bottom: 30px; }
+
+/*.................................  why Sec   ..........................................*/
+
+.sec-padding-2{ padding:50px 0px;}
+
+.why-img{ width:100px; height: 80px; margin-bottom: 10px;}
+.content {
+    font-size: 18px;
+    color: #6e6868;
+   
+    line-height: 22px;
+}
+
+.content span {
+    font-weight:bold;
+	color: #569101;}
+
+ .content:hover{    color: #ff6600;  font-weight: bold;}
+.mar-40{ margin-top: 40px;}
+.map {
+    background-image: url(../images/bulding.png); background-repeat: no-repeat;
+    height: 1050px;
+    background-size: 100%;
+    position: relative; padding-top: 130px;
+}
+.circle{ background:#fff; border-radius:50%; border:#ff4c05 solid 5px; width:100px; height:100px; padding:15px;}
+.circle-heading{ color:#000; font-size:18px; font-weight:bold; padding-top:10px;}
+.circle-cont{ color:#000; font-size:17px; padding:10px;}
+.lg-sec{ width:300px;}
+.lft{ text-align:right;}
+.center{text-align:center;}
+.lg-sec:hover .circle{border:#569101 solid 5px;}
+ .lg-sec:hover .circle-heading{ color:#ff4c05;}
+.lg-sec:hover .circle-cont{ color:#000; font-size:18px; padding:10px;}
+
+
+
+.law-program {
+    position: relative;
+	margin-top: -200px;
+}
+.tab {
+    overflow: hidden; margin-top:20px;
+}
+
+.tab button.active {
+    background-color: #992c0c;
+    color: #fff; border:none;
+}
+
+
+.tab button {
+    background-color: #08467b;
+    float: left;
+    cursor: pointer;
+    padding: 30px 56px;
+    transition: 0.3s;
+    font-size: 30px;
+    border:none;
+    margin: 0px 20px 0px 0px;
+    font-weight: bold;
+    color: #fff;
+}
+.smt{text-align:center; border-top:#ccc solid 1px; padding:10px 0px; font-size:18px; font-weight:normal;}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #992c0c; color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  
+  
+
+}
+
+.tabcontent p {
+   margin: 0px; padding: 20px 0px 0px 0px; font-size: 18px; line-height: 30px; text-align:justify; color:#6f6c6c;
+
+}
+.tab-detail{ display:flex; border-bottom:#ccc solid 1px;}
+.tabcontent-img{width:400px;}
+.tabcontent-cont{width:670px; padding:0px 0px 0px 50px; }
+.cont-heading{ font-size:35px; font-weight:bold; color:#ff5a00; padding:20px 0px 0px 0px;}
+
+.board .owl-nav{ text-align:center; padding:20px 0px 10px 0px;}
+.board .owl-nav span {
+    font-size: 45px;
+    width: 70px;
+    height: 44px;
+    margin: 0px 0 0px 9px;
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    background: #f71f46;
+    /* border: solid 2px #000; */
+    color: #fff;
+    padding: 10px;
+}
+
+.owl-dots {
+    margin: -10px;
+}
+.step{background: url(../images/step-graphic.png) no-repeat  top center; min-height: 700px;position:relative;}
+.step-1{position: absolute;top:5px;right: 165px;}
+.step-2{position: absolute;top:175px;right: 85px;}
+.step-3{position: absolute; top:375px; right:175px;}
+.step-4{position: absolute; bottom:60px; left:490px;}
+.step-5{position: absolute;top:375px;left: 105px;}
+.step-6{position: absolute;top:175px;left: 65px;}
+.step-7{position: absolute;top:5px;left: 167px;}
+.no{ font-size:60px; font-weight:bold; line-height: 30px; }
+.st{ font-size:18px; font-weight:600;color:#d24a02;}
+.step-det{font-size:18px; font-weight:600;color:#000;}
+.ft{background: #ee5909; padding: 20px 0px 10px 0px;}
+.banner-bot{    position: absolute;
+    left: 0;
+   top:707px;
+   
+    
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.banner-heads {
+    background-image: url(../images/comp-icon.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 30px;
+    background-size: 7%;
+    background-color: #304b01;
+    padding: 10px 0px 15px 79px;
+    background-position: 20px 10px;
+    font-weight: bold;
+    width: 689px;
+}
+
+.adm-open{background:#ffcb05; color:#000; font-weight:bold; font-size:25px; margin-top: 20px; padding: 10px 20px; width:330px; }
+
+
+
+/*.............................. css for bounce effect ...................................*/
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.child {
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+/*.............................. End css for bounce effect ...................................*/
+
+.bullet-points ul{ margin:0px 0px 0px 20px; padding:0px;}
+
+.bullet-points ul li {
+    background-image: url(../images/cap-icon.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    list-style: none;
+    padding: 5px 0px 5px 44px;
+    background-position: 0px 3px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
