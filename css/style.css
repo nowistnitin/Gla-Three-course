@@ -1809,7 +1809,8 @@ h1{
 }
 
 .gla-programs-dialog__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 45% 55%;
   gap: 32px;
   padding: 40px;
   border-radius: 16px;
@@ -1818,9 +1819,14 @@ h1{
   min-height: 500px;
 }
 
+.gla-programs-dialog__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .gla-programs-dialog__image-wrapper {
-  flex: 0 0 45%;
-  max-width: 45%;
+  width: 100%;
 }
 
 .gla-programs-dialog__image {
@@ -1833,8 +1839,6 @@ h1{
 }
 
 .gla-programs-dialog__details {
-  flex: 0 0 55%;
-  max-width: 55%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2010,7 +2014,7 @@ h1{
 .gla-programs-dialog__outcomes,
 .gla-programs-dialog__careers,
 .gla-programs-dialog__eligibility {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .gla-programs-dialog__outcomes h4,
@@ -2070,9 +2074,10 @@ h1{
 }
 
 .gla-programs-dialog__fee-structure {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
 }
 
 .gla-programs-dialog__fee-list {
@@ -2159,18 +2164,21 @@ h1{
   }
 
   .gla-programs-dialog__inner {
+    grid-template-columns: 100%;
     gap: 24px;
     padding: 32px;
   }
 
-  .gla-programs-dialog__image-wrapper {
-    flex: 0 0 40%;
-    max-width: 40%;
+  .gla-programs-dialog__left {
+    order: 1;
   }
 
   .gla-programs-dialog__details {
-    flex: 0 0 60%;
-    max-width: 60%;
+    order: 2;
+  }
+
+  .gla-programs-dialog__eligibility {
+    margin-top: 16px;
   }
 }
 
@@ -2194,6 +2202,7 @@ h1{
   }
 
   .gla-programs-dialog__inner {
+    grid-template-columns: 100%;
     flex-direction: column;
     padding: 24px 20px;
     min-height: auto;
