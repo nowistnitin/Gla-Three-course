@@ -1,0 +1,374 @@
+
+@media only screen and (max-width:1600px) {
+
+}
+
+@media only screen and (max-width:1400px) {
+
+}
+@media only screen and (max-width:767px) {
+  body {
+    overflow-x: hidden;
+  }
+	
+  /* Mobile bottom bar - Always visible, no gaps */
+  .applybtn a {
+    transform: rotate(0deg);
+    bottom: 0;
+    top: auto;
+    left: 0;
+    text-align: center;
+    font-weight: 600;
+    right: auto;
+    border-radius: 0;
+    z-index: 999999;
+    position: fixed;
+    width: 33.333%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #0066cc;
+    border: none;
+  }
+  
+  .applybtn.sticky a {
+    transform: rotate(0deg);
+    bottom: 0;
+    top: auto;
+    left: 0;
+    text-align: center;
+    font-weight: 600;
+    right: auto;
+    border-radius: 0;
+    z-index: 999999;
+    position: fixed;
+    width: 33.333%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #0066cc;
+    border: none;
+    display: flex !important;
+  }
+  
+  /* Mobile bottom bar - Enquire Now, WhatsApp, Call together */
+  .wtsup {
+    position: fixed;
+    bottom: 0;
+    right: 33.333%;
+    width: 33.333%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #29a71a;
+    z-index: 999999;
+    border: none;
+  }
+  
+  .wtsup a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wtsup img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .call {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 33.333%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    z-index: 999999;
+    border: none;
+  }
+  
+  .call a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .call img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .phno2 {
+    display: none !important;
+  }
+  .form-sec {
+    position: relative;
+    width: 91%;
+    padding: 5px 17px 20px;
+    float: none !important;
+    box-shadow: none;
+    margin: 30px auto 0;
+    border: solid 1px #ccc;
+    background: #fdfdfd;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+  }
+  
+  .rotate-heading {
+    display: none;
+  }
+.logo {
+    width: 270px;
+    margin-top: 10px;
+}
+  header {
+    position:inherit;
+    padding: 15px 0px; background:#201e1b;
+  }
+	
+
+	.banner-heads {
+
+    font-size: 20px;
+    background-size: 17%;
+    padding: 14px 0px 15px 93px;
+    background-position: 20px 10px;
+    font-weight: bold;
+    width: 100%;
+}
+	
+	.banner-bot {
+    position: absolute;
+    left: 0;
+    top: 687px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+  .banner-bot .container{ padding:0px;}
+  .list-sal ul li:nth-child(2) {
+    background: #488549;
+  }
+  .list-sal ul li:nth-child(3) {
+    background: #53a654;
+  }
+  .list-sal ul li:nth-child(4) {
+    background: #488549;
+  }
+  .list_li h3 br {
+    display: none;
+  }
+  .list_li ul > li:hover {
+    margin-top: 0px;
+    box-shadow: none;
+  }
+  .list_li ul > li {
+    width: 50%;
+    padding: 0 20px;
+    margin: 0 0 30px;
+  }
+  .list_li ul {
+    margin-top: 30px;
+  }
+  .banner-text {
+    top: auto;
+    bottom: 0px;
+    transform: translate(0, 0);
+    background: #201e1b;
+    padding: 20px 0 20px;
+    position: inherit;
+  }
+  .banner-text h1 {
+    
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 30px; text-align: center; padding-bottom:10px;
+  }
+	.banner-text br {display:none;
+  }
+  
+  
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .actived, .accordion:hover {
+    background-color: #992c0c;
+    color: #fff;
+  }
+
+
+
+
+.sec-padding-2 {
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 0px; margin-bottom: 10px; text-align: center;
+    font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+}
+
+/* Override for mobile - use standardized sizes */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+.wid-50 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 5px;
+   
+    padding-bottom: 10px;
+}
+.why-img {
+    width: 100px;
+    height: 80px;
+    margin: 0px auto 10px;
+}
+.mar-40{ margin:0px;}
+
+
+.law-program {
+   
+   margin-top: 0px; 
+}
+
+	
+	.faqaccordians {
+padding: 0;
+list-style: none;
+}
+
+.faqquestiontitle {
+position: relative;
+background: #992c0c; cursor:pointer;
+}
+
+.faqquestiontitle span {
+    position: absolute;
+    right: 10px;
+    top: -4px;
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: 600;
+    coloR: #fff;
+}
+
+.faqquestiontitle p {
+color: #fff;
+padding: 7px 10px 7px 20px;
+font-weight: 600;
+font-size: 20px;
+}
+
+.lg-sec {
+    width: 250px; text-align: center; margin:0 auto 20px auto; padding-bottom: 20px; border-bottom:#ccc solid 1px;}
+.circle{ margin:0 auto;}
+.lft{ text-align:center;}
+.sec-padding{padding:20px;}
+.desktop-2 {
+    display: none !important;}
+  .mobile-2 {
+    display: block !important;}
+
+
+
+.course-name {
+    background: #fff;
+    padding: 3px 9px;
+    width: 178px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px 55px;
+}
+	
+	.course-2 {
+    color: #000;
+    line-height: 24px;
+    display: flex;
+    width: 280px; margin: 0 auto;
+}
+	.ft {
+    
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 36px 0px;
+    
+}
+	
+	
+	.logodiv1{ width:250px; margin: 0 auto; display: block;}
+
+
+
+.step {
+    background: url(../images/step-graphic-mob.png) no-repeat top center;
+    min-height: 700px;
+   position: inherit; padding-top: 360px;
+}
+
+.step-1{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-2{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-3{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-4{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-5{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-6{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-7{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+		.step-2 br{ display:none;}
+		.h1-sp {
+    color: #2b9511;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 3px;
+    display: block;
+    margin-bottom: 16px;
+}
+	
+	/* Mobile text for Affordable Programme Fee */
+	.gla-feature-text .gla-feature-text-desktop {
+		display: none !important;
+	}
+	
+	.gla-feature-text .gla-feature-text-mobile {
+		display: inline !important;
+	}
+	
+	}

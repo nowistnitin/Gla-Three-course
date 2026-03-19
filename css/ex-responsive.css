@@ -1,0 +1,248 @@
+
+@media only screen and (max-width:1600px) {
+.map {
+   
+    height: 1225px;
+    background-size: 100%;
+    padding-top: 235px;
+}
+
+@media only screen and (max-width:1400px) {
+.map {
+   
+    height: 1190px;
+    background-size: 100%;
+    padding-top: 190px;
+}
+@media only screen and (max-width:767px) {
+  body {
+    overflow-x: hidden;
+  }
+	.main-banner {
+    position: relative;
+     background: #201e1b;
+}
+  .applybtn.sticky a {
+    transform: rotate(0deg);
+    bottom: 0;
+    top: auto;
+    left: 0;
+    text-align: center;
+    font-weight: 600;
+    right: 0;
+    border-radius: 0;
+    z-index: 999999;
+  }
+  .form-sec {
+    position: relative;
+    width: 91%;
+    padding: 5px 17px 20px;
+    float: none !important;
+    box-shadow: none;
+    margin: 30px auto 0;
+    border: solid 1px #ccc;
+    background: #fdfdfd;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+  }
+  
+  .rotate-heading {
+    display: none;
+  }
+.logo {
+    width: 270px;
+    margin-top: 10px;
+}
+  header {
+    position:inherit;
+    padding: 15px 0px; background:#201e1b;
+  }
+	
+
+	.banner-heads {
+
+    font-size: 20px;
+    background-size: 17%;
+    padding: 14px 0px 15px 93px;
+    background-position: 20px 10px;
+    font-weight: bold;
+    width: 100%;
+}
+	
+	.banner-bot {
+    position: absolute;
+    left: 0;
+    top: 687px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+  .banner-bot .container{ padding:0px;}
+  .list-sal ul li:nth-child(2) {
+    background: #488549;
+  }
+  .list-sal ul li:nth-child(3) {
+    background: #53a654;
+  }
+  .list-sal ul li:nth-child(4) {
+    background: #488549;
+  }
+  .list_li h3 br {
+    display: none;
+  }
+  .list_li ul > li:hover {
+    margin-top: 0px;
+    box-shadow: none;
+  }
+  .list_li ul > li {
+    width: 50%;
+    padding: 0 20px;
+    margin: 0 0 30px;
+  }
+  .list_li ul {
+    margin-top: 30px;
+  }
+  .banner-text {
+    top: auto;
+    bottom: 0px;
+    transform: translate(0, 0);
+    background: #201e1b;
+    padding: 20px 0 20px;
+    position: inherit;
+  }
+  .banner-text h1 {
+    
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 30px; text-align: center; padding-bottom:10px;
+  }
+	.banner-text br {display:none;
+  }
+  
+  
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .actived, .accordion:hover {
+    background-color: #992c0c;
+    color: #fff;
+  }
+
+
+
+
+.sec-padding-2 {
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 0px; margin-bottom: 10px;
+	
+}
+.wid-50 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 30px;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: 20px;
+}
+.why-img {
+    width: 100px;
+    height: 80px;
+    margin: 0px auto 10px;
+}
+.mar-40{ margin:0px;}
+.map {
+    background: url(../images/affilation.jpg) no-repeat;
+    height: auto;
+    background-size: 100%;
+    position: relative;
+    padding-top: 200px;
+}
+
+.law-program {
+   
+   margin-top: 0px; 
+}
+
+	
+	.faqaccordians {
+padding: 0;
+list-style: none;
+}
+
+.faqquestiontitle {
+position: relative;
+background: #992c0c; cursor:pointer;
+}
+
+.faqquestiontitle span {
+    position: absolute;
+    right: 10px;
+    top: -4px;
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: 600;
+    coloR: #fff;
+}
+
+.faqquestiontitle p {
+color: #fff;
+padding: 7px 10px 7px 20px;
+font-weight: 600;
+font-size: 20px;
+}
+
+.lg-sec {
+    width: 250px; text-align: center; margin:0 auto 20px auto; padding-bottom: 20px; border-bottom:#ccc solid 1px;}
+.circle{ margin:0 auto;}
+.lft{ text-align:center;}
+.sec-padding{padding:20px;}
+.desktop-2 {
+    display: none !important;}
+  .mobile-2 {
+    display: none !important;}
+
+
+
+.course-name {
+    background: #fff;
+    padding: 3px 9px;
+    width: 178px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px 55px;
+}
+	
+	.course-2 {
+    color: #000;
+    line-height: 24px;
+    display: flex;
+    width: 280px; margin: 0 auto;
+}
+	.ft {
+    
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 36px 0px;
+    
+}
+	}

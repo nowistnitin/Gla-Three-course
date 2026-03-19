@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	
+
+
+
+	<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WP6Z4HDW');</script>
+<!-- End Google Tag Manager -->
+
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta http-equiv="refresh" content="10;url=http://localhost:52389/dashboard.aspx" />-->
+    <!--<meta http-equiv="refresh" content="10;url=http://onlinedemo.gla.ac.in/dashboard.aspx" />-->
+    <title>GLA University - Online Application Registration</title>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- fontawesome icons for this template -->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+
+    <!-- icoomoon icons for this template -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link href="assets/fonts/fonts" rel="stylesheet">
+
+    <!-- Slick slider for this template -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <!-- animation for this template -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- images view for this template -->
+    <script src="assets/js/all.js"></script>
+    <!-- Google Tag Manager -->
+    <!--<script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MBT7X00');</script>-->
+    <!-- End Google Tag Manager -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const autoLoginCode = sessionStorage.getItem("GLAOL_AutoLoginCode");
+            const continueButton = document.getElementById("continueButton");
+            if (autoLoginCode && continueButton) {
+                const baseUrl = "http://apply.glaonline.com/dashboard.aspx";
+                continueButton.href = baseUrl + "?type=" + autoLoginCode;
+           }
+           
+        });
+
+    </script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
+            font-size: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            position: relative;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .card-logo {
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+            .card-logo img {
+                max-width: 70%;
+                margin: 0 auto;
+                filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+                transition: transform 0.3s ease-in-out;
+            }
+
+                .card-logo img:hover {
+                    transform: scale(1.05);
+                }
+
+        h2 {
+            color: #333;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            animation: fadeInUp 2s ease-in-out;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .brand-logo {
+            background: white !important;
+        }
+
+        a {
+            display: inline-block;
+            background: linear-gradient(45deg, #2f7d32, #66a85d);
+            color: white;
+            font-size: 1.25rem;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 2.5s ease-in-out;
+        }
+
+            a:hover {
+                background: linear-gradient(45deg, #3e9e4f, #84c085);
+                transform: scale(1.1);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            a {
+                padding: 14px 28px;
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP6Z4HDW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="main-content">
+        <div class="container">
+            <div class="content-area">
+                <div class="thankyou-card">
+                    <div class="card-logo">
+                        <img src="https://onlinedemo.gla.ac.in/img/glalogopng.png" alt="GLA University Logo">
+                    </div>
+                    <h2>Thank you for applying to GLA University Online</h2>
+                    <p>
+                        Your registration has been successfully received! <br><br>
+                        You can now log in to your account and begin completing your application form.<br><br>
+                        A confirmation email with login details has been sent to your email address.
+                    </p>
+                    <p>
+                        For More Information Visit GLA Website
+                        online.gla.ac.in
+                        Contact Details: 9045954396, 7217069602
+                        Email: support.cdoe@gla.ac.in
+                    </p>
+                    <a id="continueButton" href="#">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
