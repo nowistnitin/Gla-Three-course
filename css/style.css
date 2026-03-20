@@ -1068,6 +1068,9 @@ h1{
 .step-5{position: absolute;top:375px;left: 105px;}
 .step-6{position: absolute;top:175px;left: 65px;}
 .step-7{position: absolute;top:5px;left: 167px;}
+.step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
+  max-width: 260px;
+}
 .no{ font-size:60px; font-weight:bold; line-height: 30px; }
 .st{ font-size:18px; font-weight:600;color:#d24a02;}
 .step-det{
@@ -2169,17 +2172,27 @@ h1{
   }
 
   .gla-programs-dialog__inner {
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     padding: 32px;
   }
 
   .gla-programs-dialog__left {
+    display: contents;
+  }
+
+  .gla-programs-dialog__image-wrapper {
     order: 1;
   }
 
   .gla-programs-dialog__details {
     order: 2;
+  }
+
+  .gla-programs-dialog__fee-container {
+    order: 3;
+    width: 100%;
   }
 
   .gla-programs-dialog__eligibility {
@@ -2216,18 +2229,27 @@ h1{
   }
 
   .gla-programs-dialog__inner {
-    grid-template-columns: 100%;
+    display: flex;
     flex-direction: column;
     padding: 24px 20px;
     min-height: auto;
   }
 
   .gla-programs-dialog__left {
+    display: contents;
+  }
+
+  .gla-programs-dialog__image-wrapper {
     order: 1;
   }
 
   .gla-programs-dialog__details {
     order: 2;
+  }
+
+  .gla-programs-dialog__fee-container {
+    order: 3;
+    width: 100%;
   }
 
   .gla-programs-dialog__image-wrapper,
@@ -2266,7 +2288,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 10px;
+    padding: 20px 0;
   }
 
   .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
@@ -2282,16 +2304,29 @@ h1{
     padding: 15px;
     border-radius: 10px;
     gap: 15px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .no {
-    font-size: 36px;
-    min-width: 50px;
+    font-size: 32px;
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+  
+  .st {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 4px;
   }
 
   .step-det {
     font-size: 14px;
     text-align: left;
+    flex-grow: 1;
+    word-break: break-word;
   }
 
   .step-det small {
@@ -2305,17 +2340,17 @@ h1{
 @media (max-width: 480px) {
   .step {
     gap: 15px;
-    padding: 15px 5px;
+    padding: 10px 0;
   }
 
   .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
-    padding: 12px;
-    gap: 12px;
+    padding: 15px 12px;
+    gap: 10px;
   }
 
   .no {
     font-size: 28px;
-    min-width: 40px;
+    min-width: 70px;
   }
 
   .step-det {

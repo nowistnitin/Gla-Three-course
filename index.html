@@ -1978,7 +1978,7 @@
 
           // Add eligibility if available
           if (course.eligibility) {
-            descriptionHtml += `<div class="gla-programs-dialog__eligibility"><h4>Eligibility</h4><p>${course.eligibility}</p></div>`;
+            descriptionHtml += `<div class="gla-programs-dialog__eligibility"><h4>Eligibility</h4><p style="font-size: 16px;">${course.eligibility}</p></div>`;
           }
 
           // Add placement if available
@@ -1994,19 +1994,19 @@
           let specsHtml = '';
 
           // Add specializations if available
-          if (course.specializations && course.specializations.length > 0) {
-            specsHtml += `
-          <h3 class="gla-programs-dialog__specializations-title">Specializations Available</h3>
-          <div class="gla-programs-dialog__specializations-list">
-            ${course.specializations
-                .map(
-                  (spec) =>
-                    `<span class="gla-programs-dialog__specialization-pill">${spec}</span>`
-                )
-                .join('')}
-          </div>
-        `;
-          }
+        //   if (course.specializations && course.specializations.length > 0) {
+        //     specsHtml += `
+        //   <h3 class="gla-programs-dialog__specializations-title">Specializations Available</h3>
+        //   <div class="gla-programs-dialog__specializations-list">
+        //     ${course.specializations
+        //         .map(
+        //           (spec) =>
+        //             `<span class="gla-programs-dialog__specialization-pill">${spec}</span>`
+        //         )
+        //         .join('')}
+        //   </div>
+        // `;
+        //   }
 
           if (specsHtml) {
             programSpecs.classList.add('gla-programs-dialog__specializations--visible');
