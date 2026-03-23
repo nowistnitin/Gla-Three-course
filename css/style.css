@@ -2281,14 +2281,15 @@ h1{
 }
 
 /* Journey/Step Section Responsive */
-@media (max-width: 768px) {
+/* Tablet: 3 columns */
+@media (max-width: 1330px) and (min-width: 769px) {
   .step {
     background: none;
     min-height: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
@@ -2298,23 +2299,23 @@ h1{
     left: auto;
     bottom: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     background: #f8f9fa;
-    padding: 15px;
+    padding: 20px 15px;
     border-radius: 10px;
-    gap: 15px;
-    max-width: 100%;
+    gap: 10px;
     width: 100%;
     box-sizing: border-box;
   }
 
   .no {
-    font-size: 32px;
-    min-width: 80px;
+    font-size: 36px;
+    min-width: auto;
     flex-shrink: 0;
   }
-  
+
   .st {
     display: block;
     font-size: 14px;
@@ -2324,7 +2325,7 @@ h1{
 
   .step-det {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     flex-grow: 1;
     word-break: break-word;
   }
@@ -2337,28 +2338,61 @@ h1{
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile: 2 columns */
+@media (max-width: 768px) {
   .step {
+    background: none;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-bottom: 20px;
   }
 
   .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
-    padding: 15px 12px;
-    gap: 10px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px 10px;
+    border-radius: 10px;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .no {
     font-size: 28px;
-    min-width: 70px;
+    min-width: auto;
+    flex-shrink: 0;
+  }
+
+  .st {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 4px;
   }
 
   .step-det {
     font-size: 13px;
+    text-align: center;
+    flex-grow: 1;
+    word-break: break-word;
   }
 
   .step-det small {
     font-size: 11px;
+    display: block;
+    margin-top: 4px;
+    color: #666;
   }
 }
 
