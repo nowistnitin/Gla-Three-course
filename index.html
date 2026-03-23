@@ -166,81 +166,84 @@
  
   /* ─── Headline ─────────────────────────────────── */
   .hero24-headline {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 2.6rem;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
     color: #ffffff;
-    line-height: 1.18;
-    margin: 0 0 14px 0;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.55), 0 4px 24px rgba(0,0,0,0.35);
-    letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin: 0 0 8px 0;
+    letter-spacing: -1px;
+    text-transform: uppercase;
   }
- 
+
   .hero24-headline .hero24-accent {
+    display: block;
     color: #FFD700;
     -webkit-text-fill-color: #FFD700;
-    font-style: italic;
-    text-shadow:
-      0 0 20px rgba(255, 215, 0, 0.75),
-      0 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 3.5rem;
+    text-shadow: 0 0 40px rgba(255, 215, 0, 0.6), 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
   }
- 
+
   /* ─── Admissions Open ──────────────────────────── */
   .hero24-admissions {
-    font-size: 1.9rem;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 26px;
-    text-shadow: 0 0 20px rgba(255,215,0,0.55), 0 2px 8px rgba(0,0,0,0.6);
-    display: flex;
-    align-items: center;
-    gap: 9px;
-  }
- 
-  .hero24-admissions-icon {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
-    color: #FFD700;
-    filter: drop-shadow(0 0 6px rgba(255,215,0,0.7));
-  }
- 
-  /* ─── B.Tech in label ──────────────────────────── */
-  .hero24-btech-label {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: #FFD700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 12px;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 2px 8px rgba(0,0,0,0.5);
-    display: block;
+    margin: 20px 0 25px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+    padding: 10px 24px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5), 0 2px 10px rgba(0,0,0,0.3);
   }
- 
+
+  .hero24-admissions-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #111827;
+  }
+
+  /* ─── B.Tech in label ──────────────────────────── */
+  .hero24-btech-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
   /* ─── Pills ────────────────────────────────────── */
   .hero24-programs {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
   }
- 
+
   .hero24-pill {
-    padding: 12px 26px;
-    background: rgba(255,255,255,0.97);
+    padding: 14px 28px;
+    background: rgba(255,255,255,0.95);
     color: #111827;
-    font-size: 1.4rem;
-    font-weight: 800;
-    border-radius: 50px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.20);
-    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    border: 2px solid #FFD700;
     transition: all 0.3s ease;
     cursor: default;
     position: relative;
     overflow: hidden;
   }
- 
+
   .hero24-pill::before {
     content: '';
     position: absolute;
@@ -250,16 +253,16 @@
     transition: opacity 0.3s ease;
     z-index: 0;
   }
- 
+
   .hero24-pill span { position: relative; z-index: 1; }
- 
+
   .hero24-pill:hover::before { opacity: 1; }
   .hero24-pill:hover {
     color: #fff;
     border-color: transparent;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
- 
+
   /* ─── Animation ────────────────────────────────── */
   @keyframes hero24FadeIn {
     from { opacity: 0; transform: translateX(-36px); }
@@ -270,16 +273,18 @@
   @media (min-width: 1401px) {
     .hero24-section   { height: 700px; }
     .hero24-headline  { font-size: 3rem; }
+    .hero24-headline .hero24-accent { font-size: 3.5rem; }
   }
   @media (min-width: 1701px) {
     .hero24-section   { height: 800px; }
     .hero24-headline  { font-size: 3.4rem; }
+    .hero24-headline .hero24-accent { font-size: 4rem; }
   }
- 
+
   /* ─── Tablet ────────────────────────────────────── */
   @media (max-width: 1024px) {
     .hero24-section { height: 520px; }
- 
+
     .hero24-content {
       padding: 32px 32px 32px 32px;
       max-width: 100%;
@@ -326,20 +331,22 @@
     }
     .hero24-logo-img  { height: 34px; }
     .hero24-headline  { font-size: 1.5rem; margin-bottom: 10px; }
- 
+    .hero24-headline .hero24-accent { font-size: 1.8rem; }
+
     .hero24-admissions {
-      font-size: 1rem;
+      font-size: 0.9rem;
+      padding: 8px 16px;
       margin-bottom: 18px;
-      justify-content: center;
-      letter-spacing: 1.5px;
     }
- 
+
     .hero24-btech-label { font-size: 0.92rem; margin-bottom: 10px; }
     .hero24-programs    { justify-content: center; gap: 8px; }
- 
+
     .hero24-pill {
-      padding: 8px 16px;
+      padding: 8px 14px;
       font-size: 0.85rem;
+      border-radius: 8px;
+    }
     }
   }
  
@@ -374,21 +381,22 @@
     .hero24-logo-box  { padding: 7px 14px; margin-bottom: 16px; }
     .hero24-logo-img  { height: 28px; }
     .hero24-headline  { font-size: 1.22rem; margin-bottom: 8px; }
- 
+    .hero24-headline .hero24-accent { font-size: 1.4rem; }
+
     .hero24-admissions {
-      font-size: 0.82rem;
+      font-size: 0.75rem;
+      padding: 6px 12px;
       margin-bottom: 14px;
-      letter-spacing: 1px;
-      justify-content: center;
     }
- 
-    .hero24-admissions-icon { width: 17px; height: 17px; }
-    .hero24-btech-label     { font-size: 0.92rem; margin-bottom: 9px; }
-    .hero24-programs        { gap: 7px; justify-content: center; }
- 
+
+    .hero24-admissions-icon { width: 14px; height: 14px; }
+    .hero24-btech-label     { font-size: 0.8rem; margin-bottom: 9px; }
+    .hero24-programs        { gap: 6px; justify-content: center; }
+
     .hero24-pill {
-      padding: 7px 13px;
-      font-size: 1rem;
+      padding: 6px 10px;
+      font-size: 0.75rem;
+      border-radius: 6px;
     }
   }
 </style>
