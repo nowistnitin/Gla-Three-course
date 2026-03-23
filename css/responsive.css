@@ -231,7 +231,7 @@
 
 
 .sec-padding-2 {
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 
 h1 {
@@ -345,13 +345,13 @@ font-size: 20px;
    position: inherit; padding-top: 360px;
 }
 
-.step-1{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-2{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-3{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-4{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-5{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-6{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
-.step-7{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 30px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-1{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-2{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-3{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-4{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-5{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-6{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
+.step-7{position: inherit !important; top:inherit !important;right:inherit !important; left:inherit !important; bottom:inherit !important; padding-bottom: 20px; width: 260px; margin: 0 auto 10px auto; border-bottom: #c0c0c0 solid 1px;}
 		.step-2 br{ display:none;}
 		.h1-sp {
     color: #2b9511;
