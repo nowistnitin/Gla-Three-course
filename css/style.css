@@ -4196,3 +4196,12 @@ body.modal-open {
     height: 12px;
   }
 }
+
+
+@media (max-width:1400px){
+  .form-sec { position: fixed; transition: all 0.5s; width: 320px; background: #FFF; padding: 0px 17px 20px; border-radius: 6px; float: right !important; z-index: 99; top: 100px; right: 45px; box-shadow: 0 0 40px 0px #8e8e8e; }
+}
+
+@media (max-width:1024px){
+  .form-sec { position: fixed; transition: all 0.5s; width: 320px; background: #FFF; padding: 0px 17px 20px; border-radius: 6px; float: right !important; z-index: 99; top: 20px; right: 45px; box-shadow: 0 0 40px 0px #8e8e8e; }
+}
