@@ -1213,7 +1213,7 @@ h1{
   width: 100%;
   min-height: 600px;
   overflow: hidden;
-  background-image: url('/milestone.png');
+  background-image: url('milestone.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
