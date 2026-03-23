@@ -50,7 +50,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Degree Courses in India | GLA Degree Programs</title>
-  <link rel="icon" href="images/logo-2.png" type="image/x-icon" />
+  <link rel="icon" href="images/logo.png" type="image/x-icon" />
   <meta name="description"
     content="Explore degree courses and undergraduate degree courses in India with GLA Degree programs designed for flexible career-ready learning.">
   <!-- Owl Carousel -->
@@ -60,7 +60,32 @@
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <script src="js/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/form/jquery.validationEngine.js"></script>
+  <script src="js/form/jquery.validationEngine-en.js"></script>
+  <script>
+    $(document).ready(function () {
+      url = new URL(window.location.href);
+      var campaign_name = url.searchParams.get("utm_campaign");
+      var keyword = url.searchParams.get("utm_keyword");
+      var source = url.searchParams.get("utm_source");
+      var network = url.searchParams.get("utm_network");
+      var utm_medium = url.searchParams.get("utm_medium");
+
+      document.getElementById("campaign_url").value = window.location.href;
+      document.getElementById("campaign_name").value = campaign_name;
+      document.getElementById("keyword").value = keyword;
+      document.getElementById("sourceId").value = source;
+      document.getElementById("network").value = network;
+      document.getElementById("utm_medium").value = utm_medium;
+
+      if (document.referrer) {
+        var myReferer = document.referrer;
+        document.getElementById("referrerid").value = myReferer;
+      } else {
+        document.getElementById("referrerid").value = "None";
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -134,7 +159,7 @@
   }
  
   .hero24-logo-img {
-    height: 48px;
+    height: 100px;
     width: auto;
     display: block;
   }
@@ -262,7 +287,7 @@
     }
  
     .hero24-logo-box  { margin-bottom: 20px; }
-    .hero24-logo-img  { height: 42px; }
+    .hero24-logo-img  { height: 70px; }
     .hero24-headline  { font-size: 2rem; }
  
     .hero24-admissions {
@@ -1393,12 +1418,129 @@
 
   <div class="applybtn"><a href="#enquire-now">Enquire Now</a></div>
   <div class="form-sec" id="enquire-now">
-    <!--<div class="form" id="applyBox">
-    <div class="adm-txt"><strong>Enquire Now</strong></div>
-    <div class="npf_wgts" data-height="480px" data-w="6ef1c6b3932415ee0241d9bd1965dc9b"></div>
-  </div>-->
-    <div class="form-title"><strong>Get your Free Counselling Today</strong></div>
-    <div id="reg-form" style="padding:10px 0 0 0"></div>
+    <div class="form">
+      <div class="form-title"><strong>Get your Free Counselling Today</strong></div>
+      <form id="formID" name="contact-form" method="post" action="#">
+        <div class="form-group Name">
+          <input name="name" class="form-control input validate[required]" required placeholder="Name*"
+            data-errormessage-value-missing="*Name is required!" type="text" id="name" />
+        </div>
+        <div class="form-group email">
+          <input name="email" id="email" class="form-control input validate[required, custom[email]]" required
+            placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="email" />
+        </div>
+        <div class="form-group Mobile">
+          <input name="phone" id="phone" maxlength="10" placeholder="Phone Number*" required
+            class="form-control input validate[required, custom[phone]]"
+            data-errormessage-value-missing="* Mobile is required!" type="tel" />
+        </div>
+        <div class="form-group State">
+          <select required name="state" id="stateid" onChange="select_state_func()"
+            data-errormessage-value-missing="* State is required!" class="form-control input validate[required]">
+            <option value="">Select State*</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Andaman & Nicobar">Andaman & Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Orissa">Orissa</option>
+            <option value="Pondicherry">Pondicherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option>
+            <option value="Daman & Diu">Daman & Diu</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Telangana">Telangana</option>
+          </select>
+        </div>
+
+        <div class="form-group City" id="citypid">
+          <p id="citypid-inner">
+            <select name="city" id="cityid" class="form-control input formbg1 validate[required]"
+              data-errormessage-value-missing="* City is required!" required>
+              <option value="" selected="selected">Select Your District*</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="form-group campus">
+          <select name="campus" id="campusid" onChange="console.log('Campus changed!'); select_course_func();"
+            data-errormessage-value-missing="* Campus is required!" class="input validate[required]" required>
+            <option selected="selected" value="">Select Campus*</option>
+            <option value="Noida Campus#102">Noida</option>
+            <option value="Mathura Campus#101">Mathura</option>
+          </select>
+        </div>
+        <input type="hidden" name="coursesid" value="B. Tech." id="courseId" />
+        <div class="form-group Branches" id="branchsec" style="display: none">
+          <p id="branchpid" style="color: #747474">
+            <select name="branch" id="branchid" data-errormessage-value-missing="* Branch is required!"
+              class="input formbg1">
+              <option value="">Select Your Branch*</option>
+            </select>
+          </p>
+        </div>
+        <div class="form-group course">
+          <p id="coursepid">
+            <select name="courseid" id="courseid" data-errormessage-value-missing="* Course Is required"
+              class="input formbg1 validate[required]" required onChange="
+                  document.getElementById('courseId').value = this.options[this.selectedIndex].text;
+                  console.log('Course selected:', this.value, '| Text:', this.options[this.selectedIndex].text);
+                ">
+              <option value="">Select Course*</option>
+            </select>
+          </p>
+        </div>
+        <div class="sb-btn-sec">
+          <div class="term text-muted">
+            <label class="checkbox-label">
+              <input type="checkbox" name="agree" id="agree" checked="checked" />
+              <span class="checkmark"></span>I grant permission to GLA to contact me
+            </label>
+          </div>
+          <div class="form-groupp">
+            <input type="hidden" id="referrerid" name="referrer_name" value="" />
+            <input type="hidden" id="keyword" name="keyword" value="" />
+            <input type="hidden" id="network" name="network" value="" />
+            <input type="hidden" id="campaign_url" name="campaign_url" value="" />
+            <input type="hidden" id="campaign_name" name="campaign_name" value="" />
+            <input type="hidden" id="utm_medium" name="utm_medium" value="" />
+            <input type="hidden" id="sourceId" name="source" value="" />
+            <input type="hidden" name="orderid" value="792" />
+            <input type="hidden" name="sitename" value="GLABTECH2021" />
+            <button id="btnSubmit" type="submit" class="btn btn_submit sbt">
+              Submit
+            </button>
+            <div id="waitttAmazingLover" style="color: #259609; display: none; position: absolute; top: 80%; left: 13%; padding: 2px; text-align: center; width: 242px;">
+              <img src="images/loading-36.gif" width="64" height="64" /><br />
+            </div>
+          </div>
+          <span id="sbt"></span>
+        </div>
+      </form>
+    </div>
   </div>
 
 
@@ -2075,7 +2217,10 @@
   <!--..............................................   end call & wtsup   ........................................-->
 
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/api-registration.js?v=1.2.5"></script>
+  <script src="js/form/script.js"></script>
+  <script src="js/form/state.js"></script>
+  <script src="js/form/courses.js"></script>
+  <script src="js/form/campus.js"></script>
   <script>
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
@@ -2109,7 +2254,7 @@
   </script>
   <script>
     $(document).ready(function () {
-      LoadRegistrationForm('reg-form', 'website', '');
+      // Form is now directly in HTML, no need to load via API
     });
   </script>
   <script src="js/animation.js"></script>
