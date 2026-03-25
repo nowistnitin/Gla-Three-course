@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Degree Courses in India | GLA Degree Programs</title>
-  <link rel="icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="icon" href="images/logo.webp" type="image/x-icon" />
   <meta name="description"
     content="Explore degree courses and undergraduate degree courses in India with GLA Degree programs designed for flexible career-ready learning.">
   <!-- Owl Carousel -->
@@ -121,6 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     justify-content: flex-start;
     padding: 40px 48px 48px 80px;
     max-width: 700px;
+    width: 100%;
     height: 100%;
     animation: hero24FadeIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
@@ -175,11 +176,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin: 20px 0 25px 0;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
     padding: 10px 24px;
     border-radius: 50px;
     box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5), 0 2px 10px rgba(0,0,0,0.3);
+    width: fit-content;
+    max-width: 100%;
   }
 
   .hero24-admissions-icon {
@@ -251,13 +255,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* ─── Desktop XL ───────────────────────────────── */
   @media (min-width: 1401px) {
     .hero24-section   { height: 700px; }
+    .hero24-content { width: 100%; }
     .hero24-headline  { font-size: 2.5rem; }
     .hero24-headline .hero24-accent { font-size: 3.5rem; }
   }
   @media (min-width: 1701px) {
     .hero24-section   { height: 800px; }
+    .hero24-content { width: 100%; }
     .hero24-headline  { font-size: 3.4rem; }
     .hero24-headline .hero24-accent { font-size: 4rem; }
+  }
+  @media (min-width: 1801px) {
+    .hero24-section   { height: 850px; }
+    .hero24-content {
+      padding: 50px 60px 60px 100px;
+      max-width: 800px;
+      width: 100%;
+    }
+    .hero24-logo-img  { height: 110px; }
+    .hero24-headline  { font-size: 3.6rem; }
+    .hero24-headline .hero24-accent { font-size: 4.2rem; }
+    .hero24-admissions { font-size: 1.5rem; padding: 12px 28px; }
+    .hero24-btech-label { font-size: 1.4rem; }
+    .hero24-pill {
+      padding: 14px 24px;
+      font-size: 1rem;
+    }
   }
 
   /* ─── Large Desktop (1025px - 1400px) ──────────── */
@@ -266,6 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hero24-content {
       padding: 36px 40px 40px 60px;
       max-width: 650px;
+      width: 100%;
     }
     .hero24-logo-box  { margin-bottom: 25px; }
     .hero24-logo-img  { height: 70px; }
@@ -328,6 +352,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 8px 12px;
       font-size: 0.78rem;
       white-space: nowrap;
+    }
+  }
+
+  /* ─── Extra Small Tablet (725px - 768px) ───────── */
+  @media (min-width: 725px) and (max-width: 768px) {
+    .hero24-section { height: 440px; }
+    .hero24-content {
+      padding: 24px 24px 24px 24px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+    .hero24-logo-box  { margin-bottom: 16px; }
+    .hero24-logo-img  { height: 40px; }
+    .hero24-headline  { font-size: 1.6rem; margin-bottom: 8px; }
+    .hero24-headline .hero24-accent { font-size: 1.9rem; }
+    .hero24-admissions {
+      font-size: 1rem;
+      padding: 8px 16px;
+      margin-bottom: 14px;
+    }
+    .hero24-btech-label { font-size: 0.95rem; margin-bottom: 10px; }
+    .hero24-programs { gap: 8px; justify-content: center; }
+    .hero24-pill {
+      padding: 8px 14px;
+      font-size: 0.85rem;
     }
   }
 
@@ -432,7 +482,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="hero24-content">
 
       <div class="hero24-logo-box">
-        <img src="images/logo.png" alt="GLA University Noida" class="hero24-logo-img">
+        <img src="images/logo.webp" alt="GLA University Noida" class="hero24-logo-img">
       </div>
 
       <h1 class="hero24-headline">
