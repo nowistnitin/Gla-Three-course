@@ -33,7 +33,7 @@ function select_course_func() {
     );
   } else if (typevalue == "Noida Campus#102") {
     document.getElementById("coursepid").innerHTML =
-      "<select id='courseid' form='formID' name='courseid' data-errormessage-value-missing='* Course is required!' class='input validate[required]' ><option selected='selected' value=''>Course Applying For*</option><option value='1550'>AI & ML</option><option value='1500'>CSE</option><option value='1320'>ECE VLSI</option></select>";
+      "<select id='courseid' form='formID' name='courseid' data-errormessage-value-missing='* Course is required!' class='input validate[required]' ><option value=''>Course Applying For*</option><option value='1550' selected>AI & ML</option><option value='1500'>CSE</option><option value='1320'>ECE VLSI</option></select>";
     console.log("=== NOIDA CAMPUS COURSE DROPDOWN POPULATED ===");
     console.log(
       "Course dropdown HTML:",
@@ -41,6 +41,15 @@ function select_course_func() {
     );
   }
 }
+
+// Set Noida as default campus and trigger course population on page load
+document.addEventListener("DOMContentLoaded", function() {
+  var campusSelect = document.getElementById("campusid");
+  if (campusSelect) {
+    campusSelect.value = "Noida Campus#102";
+    select_course_func();
+  }
+});
 
 // Test 1: Check if course dropdown exists
 console.log("Course dropdown:", $("#courseid").length);
