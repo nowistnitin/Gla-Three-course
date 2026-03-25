@@ -271,8 +271,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       text-align: center;
     }
  
-    .hero24-logo-box  { margin-bottom: 40px; }
-    .hero24-logo-img  { height: 70px; }
+    .hero24-logo-box  { margin-bottom: 20px; }
+    .hero24-logo-img  { height: 60px; }
     .hero24-headline  { font-size: 2rem; }
  
     .hero24-admissions {
@@ -282,6 +282,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  
     .hero24-btech-label { font-size: 1.1rem; }
     .hero24-programs    { justify-content: center; }
+    .hero24-pill {
+      padding: 10px 18px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ─── Small Tablet (769px - 1024px) ─────────────── */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .hero24-section { height: 480px; }
+
+    .hero24-logo-box  { margin-bottom: 15px; }
+    .hero24-logo-img  { height: 50px; }
+    .hero24-headline  { font-size: 1.7rem; margin-bottom: 8px; }
+    .hero24-headline .hero24-accent { font-size: 2rem; }
+
+    .hero24-admissions {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .hero24-btech-label { font-size: 1rem; margin-bottom: 8px; }
+    .hero24-programs { gap: 8px; }
+    .hero24-pill {
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+  }
+
+  /* ─── Large Desktop (1025px - 1440px) ──────────── */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .hero24-logo-box  { margin-bottom: 25px; }
+    .hero24-logo-img  { height: 65px; }
   }
  
   /* ─── Mobile ────────────────────────────────────── */
@@ -325,7 +358,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 8px 14px;
       font-size: 0.85rem;
       border-radius: 8px;
-    }
+      white-space: nowrap;
     }
   }
  
