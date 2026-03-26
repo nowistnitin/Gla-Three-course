@@ -1202,8 +1202,8 @@ h1{
 
 
 
-.wtsup{ display: block; position: fixed; right: 15px; bottom: 110px; z-index: 999; width:40px; height:40px;}
-.call { display: block; position: fixed; right: 15px; bottom: 50px; z-index: 999; width:40px; height:40px;}
+.wtsup{ display: none; position: fixed; right: 15px; bottom: 110px; z-index: 999; width:40px; height:40px;}
+.call { display: none; position: fixed; right: 15px; bottom: 50px; z-index: 999; width:40px; height:40px;}
 .phno2{position: fixed;right: 60px;bottom: 40px;z-index: 999;background: #000000;color:#fff;font-weight: normal;padding: 10px 20px;font-size: 18px;border-radius: 20px; display:none;}
 .call:hover + .phno2 {display: block;}
 
